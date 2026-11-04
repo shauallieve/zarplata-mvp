@@ -1,9 +1,31 @@
 {
-  "name": "dozhit-do-zarplaty",
+  "name": "salary-compass",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {"dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview", "test": "vitest run"},
-  "dependencies": {"react": "^19.1.0", "react-dom": "^19.1.0", "lucide-react": "^0.468.0"},
-  "devDependencies": {"@types/react": "^19.1.0", "@types/react-dom": "^19.1.0", "@vitejs/plugin-react": "^4.7.0", "@tailwindcss/vite": "^4.1.0", "tailwindcss": "^4.1.0", "typescript": "~5.8.3", "vite": "^6.3.0", "vitest": "^3.2.0"}
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.468.0",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "tailwindcss": "^4.1.8",
+    "@tailwindcss/vite": "^4.1.8",
+    "vitest": "^3.2.0"
+  }
 }
